@@ -7,7 +7,7 @@
     <degreeDatas>
       <li>
         <label>frail back</label>
-        <description>NAME has a frail back so HE can't carry as much as the average person.</description>
+        <description>[PAWN_nameDef] has a frail back so [PAWN_pronoun] can't carry as much as the average person.</description>
         <statOffsets>
           <CarryingCapacity>-25</CarryingCapacity>
         </statOffsets>
@@ -24,7 +24,7 @@
     <degreeDatas>
 	  <li>
         <label>strong back</label>
-        <description>NAME has a strong back which allows HIM to carry more than most people.</description>
+        <description>[PAWN_nameDef] has a strong back which allows [PAWN_objective] to carry more than most people.</description>
         <degree>1</degree>
         <statOffsets>
           <CarryingCapacity>+50</CarryingCapacity>
@@ -32,7 +32,7 @@
       </li>  
       <li>
         <label>very strong back</label>
-        <description>NAME has a very strong back or is part mule or something. HECAP can carry twice as much as a normal person.</description>
+        <description>[PAWN_nameDef] has a very strong back or is part mule or something. [PAWN_pronoun] can carry twice as much as a normal person.</description>
         <degree>2</degree>
         <statOffsets>
           <CarryingCapacity>+75</CarryingCapacity>
@@ -54,8 +54,9 @@
     <degreeDatas>
       <li>
         <label>animal friend</label>
-        <description>NAME has a passion for animals. HECAP gets bonuses to all animal interactions.</description>
+        <description>[PAWN_nameDef] has a passion for animals. [PAWN_pronoun] gets bonuses to all animal interactions.</description>
 		<statOffsets>
+			<HuntingStealth>+0.05</HuntingStealth>
 			<AnimalGatherSpeed>+0.10</AnimalGatherSpeed>
 			<AnimalGatherYield>+0.10</AnimalGatherYield>
 			<TameAnimalChance>+0.05</TameAnimalChance>
@@ -84,11 +85,11 @@
     <degreeDatas>
       <li>
         <label>ghoulish</label>
-        <description>NAME is still human, mostly. HECAP is immune to the effects of toxic fallout but their ghoulish appearance makes interacting with others difficult.</description>
-		<marketValueFactorOffset>-0.25</marketValueFactorOffset>
+        <description>[PAWN_nameDef] is still human, mostly. [PAWN_pronoun] is immune to the effects of toxic fallout but their ghoulish appearance makes interacting with others difficult.</description>
 		<statOffsets>
+			<marketValueFactorOffset>-0.25</marketValueFactorOffset>
 			<ToxicSensitivity>-1.0</ToxicSensitivity>
-			<ImmunityGainSpeed>+0.20</ImmunityGainSpeed>
+			<ImmunityGainSpeed>+0.30</ImmunityGainSpeed>
 			<SocialImpact>-0.20</SocialImpact>
 			<TameAnimalChance>-0.10</TameAnimalChance>
 			<TrainAnimalChance>-0.10</TrainAnimalChance>
@@ -117,10 +118,10 @@
     <degreeDatas>
       <li>
         <label>rad resistant</label>
-        <description>NAME's body has built up a resistance to the negative effects of toxic fallout.</description>
+        <description>[PAWN_nameDef]'s body has built up a resistance to the negative effects of toxic fallout.</description>
 		<statOffsets>
 			<ToxicSensitivity>-0.50</ToxicSensitivity>
-			<ImmunityGainSpeed>+0.10</ImmunityGainSpeed>
+			<ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
 		</statOffsets>
 	  </li>
     </degreeDatas>
@@ -136,10 +137,11 @@
     <degreeDatas>
       <li>
         <label>action boy</label>
-        <description>NAME There's no time to waste! HECAP has increased movement and workspeed.</description>
+        <description>There's no time to waste! [PAWN_nameDef] has increased movement and work speed.</description>
 		<statOffsets>
           <MoveSpeed>0.20</MoveSpeed>
 		  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+		  <EatingSpeed>+0.20</EatingSpeed>
         </statOffsets>
       </li>
     </degreeDatas>
@@ -156,10 +158,11 @@
     <degreeDatas>
       <li>
         <label>action girl</label>
-        <description>NAME There's no time to waste! HECAP has increased movement and workspeed.</description>
+        <description>There's no time to waste! [PAWN_nameDef] has increased movement and work speed.</description>
 		<statOffsets>
           <MoveSpeed>0.20</MoveSpeed>
 		  <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+		  <EatingSpeed>+0.20</EatingSpeed>
         </statOffsets>
       </li>
     </degreeDatas>
@@ -176,11 +179,11 @@
     <degreeDatas>
       <li>
         <label>quick hands</label>
-        <description>NAME has quick hands. When it comes to HIS hands, NAME never hesitates.</description>
+        <description>[PAWN_nameDef] has quick hands. When it comes to [PAWN_possessive] hands, [PAWN_nameDef] never hesitates.</description>
 		<statOffsets>
 		  <AimingDelayFactor>-0.15</AimingDelayFactor>
 		  <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
-		  <MeleeHitChance>+2.5</MeleeHitChance>
+		  <MeleeHitChance>+5</MeleeHitChance>
 		</statOffsets>
 		<skillGains>
 		  <li>
@@ -203,7 +206,7 @@
     <degreeDatas>
       <li>
         <label>idiot savant</label>
-        <description>NAME isn't stupid! HE is just... different. HECAP learns twice as fast but works slower than normal, HE is also incapable handling some tasks.</description>
+        <description>[PAWN_nameDef] isn't stupid! [PAWN_pronoun] is just... different. [PAWN_pronoun] learns twice as fast but works slower than normal, [PAWN_pronoun] is also incapable handling some tasks.</description>
 		<statOffsets>
 		  <GlobalLearningFactor>1.0</GlobalLearningFactor>
 		  <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
@@ -225,12 +228,11 @@
     <degreeDatas>
       <li>
         <label>charismatic</label>
-        <description>NAME has a charismatic personality. HECAP gets bonuses to all human-like social interactions.</description>
+        <description>[PAWN_nameDef] has a charismatic personality. [PAWN_pronoun] gets bonuses to all human-like social interactions.</description>
 		<degree>1</degree>
 		<statOffsets>
-		  <RecruitPrisonerChance>0.05</RecruitPrisonerChance>
+		  <NegotiationAbility>+0.10</NegotiationAbility>
 		  <SocialImpact>0.20</SocialImpact>
-		  <DiplomacyPower>0.10</DiplomacyPower>
 		  <TradePriceImprovement>0.05</TradePriceImprovement>
 		</statOffsets>
 		<skillGains>
@@ -242,12 +244,11 @@
 	  </li>
 	  <li>
         <label>very charismatic</label>
-        <description>NAME has a very charismatic personality. HECAP gets bonuses to all human-like social interactions.</description>
+        <description>[PAWN_nameDef] has a very charismatic personality. [PAWN_pronoun] gets bonuses to all human-like social interactions.</description>
 		<degree>2</degree>
 		<statOffsets>
-		  <RecruitPrisonerChance>0.05</RecruitPrisonerChance>
+		  <NegotiationAbility>+0.20</NegotiationAbility>
 		  <SocialImpact>0.30</SocialImpact>
-		  <DiplomacyPower>0.20</DiplomacyPower>
 		  <TradePriceImprovement>0.10</TradePriceImprovement>
 		</statOffsets>
 		<skillGains>
@@ -275,10 +276,10 @@
     <degreeDatas>
       <li>
         <label>gun nut</label>
-        <description>NAME is a gun nut, HE loves guns. HECAP gets a mood bonus while holding a ranged weapon.</description>
+        <description>[PAWN_nameDef] is a gun nut, [PAWN_pronoun] loves guns. [PAWN_pronoun] gets a mood bonus while holding a ranged weapon.</description>
 		<statOffsets>
 		  <AimingDelayFactor>-0.10</AimingDelayFactor>
-		  <ShootingAccuracy>5</ShootingAccuracy>
+		  <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
 		</statOffsets>
 		<skillGains>
 		  <li>
@@ -306,7 +307,7 @@
     <degreeDatas>
       <li>
         <label>rooted</label>
-        <description>NAME is part tree! HECAP can really take a beating!</description>
+        <description>[PAWN_nameDef] is part tree! [PAWN_pronoun] can really take a beating!</description>
 		<statOffsets>
 		  <MoveSpeed>-0.20</MoveSpeed>
 		  <PainShockThreshold>+0.20</PainShockThreshold>
@@ -323,44 +324,15 @@
   </TraitDef>
   
   <TraitDef>
-    <defName>FT_Toughness</defName>
-    <commonality>0.55</commonality>
-    <degreeDatas>
-      <li>
-        <label>tough</label>
-        <description>If nothing else, NAME can really take a beating!</description>
-		<degree>1</degree>
-		<statOffsets>
-		  <PainShockThreshold>+0.10</PainShockThreshold>
-		  <ImmunityGainSpeed>+0.05</ImmunityGainSpeed>
-		</statOffsets>
-	  </li>
-	  <li>
-        <label>very tough</label>
-        <description>If nothing else, NAME can really take a beating!</description>
-		<degree>2</degree>
-		<statOffsets>
-		  <PainShockThreshold>+0.20</PainShockThreshold>
-		  <ImmunityGainSpeed>+0.10</ImmunityGainSpeed>
-		</statOffsets>
-	  </li>
-    </degreeDatas>
-	<conflictingTraits>
-      <li>Wimp</li>
-    </conflictingTraits>
-  </TraitDef>
-  
-  <TraitDef>
     <defName>FT_Intimidation</defName>
     <commonality>0.55</commonality>
     <degreeDatas>
       <li>
         <label>intimidating</label>
-        <description>NAME has an intimidating personality, this gives HIM an advantage in social interactions.</description>
+        <description>[PAWN_nameDef] has an intimidating personality, this gives [PAWN_objective] an advantage in social interactions.</description>
 		<degree>1</degree>
 		<statOffsets>
-		  <RecruitPrisonerChance>+0.05</RecruitPrisonerChance>
-		  <DiplomacyPower>+0.10</DiplomacyPower>
+		  <NegotiationAbility>+0.10</NegotiationAbility>
 		  <SocialImpact>+0.20</SocialImpact>
 		</statOffsets>
 		<skillGains>
@@ -372,11 +344,10 @@
 	  </li>
 	  <li>
         <label>very intimidating</label>
-        <description>NAME has a very intimidating personality, this gives HIM a big advantage in social interactions.</description>
+        <description>[PAWN_nameDef] has a very intimidating personality, this gives [PAWN_objective] a big advantage in social interactions.</description>
 		<degree>2</degree>
 		<statOffsets>
-		  <RecruitPrisonerChance>+0.05</RecruitPrisonerChance>
-		  <DiplomacyPower>+0.20</DiplomacyPower>
+		  <NegotiationAbility>+0.20</NegotiationAbility>
 		  <SocialImpact>+0.30</SocialImpact>
 		  <TradePriceImprovement>+0.05</TradePriceImprovement>
 		</statOffsets>
@@ -402,7 +373,7 @@
     <degreeDatas>
       <li>
         <label>scrapper</label>
-        <description>NAME is good at working with scrap metal. HECAP is great with a smelter and is efficient when using building materials. </description>
+        <description>[PAWN_nameDef] is good at working with scrap metal. [PAWN_pronoun] is great with a smelter and is efficient when using building materials. </description>
 		<statOffsets>
 		  <SmeltingSpeed>+0.20</SmeltingSpeed>
 		  <FixBrokenDownBuildingSuccessChance>+0.10</FixBrokenDownBuildingSuccessChance>
@@ -421,9 +392,6 @@
         </skillGains>
 	  </li>
     </degreeDatas>
-	<conflictingTraits>
-      <li>GreenThumb</li>
-    </conflictingTraits>
 	<requiredWorkTags>
       <li>Crafting</li>
       <li>ManualSkilled</li>
@@ -436,12 +404,13 @@
     <degreeDatas>
       <li>
         <label>fortune finder</label>
-        <description>NAME seems to discover hidden wealth where ever HE goes.</description>
+        <description>[PAWN_nameDef] seems to discover hidden wealth where ever [PAWN_pronoun] goes.</description>
 		<statOffsets>
-		  <MiningYield>+0.10</MiningYield>
-		  <AnimalGatherYield>+0.10</AnimalGatherYield>
-		  <PlantHarvestYield>+0.10</PlantHarvestYield>
-		  <TradePriceImprovement>+0.10</TradePriceImprovement>
+			<ForagedNutritionPerDay>+5</ForagedNutritionPerDay>
+			<MiningYield>+0.10</MiningYield>
+			<AnimalGatherYield>+0.10</AnimalGatherYield>
+			<PlantHarvestYield>+0.10</PlantHarvestYield>
+			<TradePriceImprovement>+0.10</TradePriceImprovement>
 		</statOffsets>
 	  </li>
     </degreeDatas>
@@ -460,10 +429,10 @@
     <degreeDatas>
 	  <li>
         <label>poor aim</label>
-        <description>NAME has poor hand-eye coordination and will miss HIS target more often in combat.</description>
+        <description>[PAWN_nameDef] has poor hand-eye coordination and will miss [PAWN_possessive] target more often in combat.</description>
 		<degree>-1</degree>
 		<statOffsets>
-		  <ShootingAccuracy>-5</ShootingAccuracy>
+		  <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
 		  <MeleeHitChance>-5</MeleeHitChance>
 		</statOffsets>
 		<skillGains>
@@ -475,10 +444,10 @@
 	  </li>
       <li>
         <label>steady aim</label>
-        <description>NAME has great hand-eye coordination and will miss HIS target less often in combat.</description>
+        <description>[PAWN_nameDef] has great hand-eye coordination and will miss [PAWN_possessive] target less often in combat.</description>
 		<degree>1</degree>
 		<statOffsets>
-		  <ShootingAccuracy>+5</ShootingAccuracy>
+		  <ShootingAccuracyPawn>+5</ShootingAccuracyPawn>
 		  <MeleeHitChance>+5</MeleeHitChance>
 		</statOffsets>
 		<skillGains>
@@ -500,12 +469,13 @@
     <degreeDatas>
 	  <li>
         <label>agile</label>
-        <description>NAME has good reflexes and moves with finesse. HECAP will land and dodge more attacks in melee combat.</description>
+        <description>[PAWN_nameDef] has good reflexes and moves with finesse. [PAWN_pronoun] will land and dodge more attacks in melee combat.</description>
 		<degree>1</degree>
 		<statOffsets>
-		  <MoveSpeed>0.20</MoveSpeed>
-		  <MeleeHitChance>+5</MeleeHitChance>
-		  <MeleeDodgeChance>+5</MeleeDodgeChance>
+			<HuntingStealth>+0.15</HuntingStealth>
+			<MoveSpeed>0.20</MoveSpeed>
+			<MeleeHitChance>+5</MeleeHitChance>
+			<MeleeDodgeChance>+5</MeleeDodgeChance>
 		</statOffsets>
 		<skillGains>
 		  <li>
@@ -516,12 +486,13 @@
 	  </li>
       <li>
         <label>ninja-like</label>
-        <description>NAME has great reflexes and moves like a ninja. HECAP will land and dodge more attacks in melee combat.</description>
+        <description>[PAWN_nameDef] has great reflexes and moves like a ninja. [PAWN_pronoun] will land and dodge more attacks in melee combat.</description>
 		<degree>2</degree>
 		<statOffsets>
-		  <MoveSpeed>0.40</MoveSpeed>
-		  <MeleeHitChance>+5</MeleeHitChance>
-		  <MeleeDodgeChance>+10</MeleeDodgeChance>
+			<HuntingStealth>+0.30</HuntingStealth>
+			<MoveSpeed>0.40</MoveSpeed>
+			<MeleeHitChance>+5</MeleeHitChance>
+			<MeleeDodgeChance>+10</MeleeDodgeChance>
 		</statOffsets>
 		<skillGains>
 		  <li>
@@ -546,13 +517,12 @@
     <degreeDatas>
 	  <li>
         <label>stupid</label>
-        <description>NAME isn't very smart. HECAP can mess up doing just about anything.</description>
+        <description>[PAWN_nameDef] isn't very smart. [PAWN_pronoun] can mess up doing just about anything.</description>
 		<statOffsets>
 		  <ResearchSpeed>-0.10</ResearchSpeed>
 		  <GlobalLearningFactor>-0.25</GlobalLearningFactor>
 		  <FoodPoisonChance>+0.05</FoodPoisonChance>
-		  <DiplomacyPower>-0.05</DiplomacyPower>
-		  <RecruitPrisonerChance>-0.05</RecruitPrisonerChance>
+		  <NegotiationAbility>-0.10</NegotiationAbility>
 		  <TradePriceImprovement>-0.05</TradePriceImprovement>
 		  <ConstructSuccessChance>-0.05</ConstructSuccessChance>
 		  <FixBrokenDownBuildingSuccessChance>-0.05</FixBrokenDownBuildingSuccessChance>
@@ -586,12 +556,12 @@
     <degreeDatas>
       <li>
         <label>intelligent</label>
-        <description>NAME is smarter than average. HECAP learns faster and has a good understanding of the world around HIM.</description>
+        <description>[PAWN_nameDef] is smarter than average. [PAWN_pronoun] learns faster and has a good understanding of the world around [PAWN_objective].</description>
 		<degree>1</degree>
 		<statOffsets>
 		  <ResearchSpeed>+0.10</ResearchSpeed>
 		  <GlobalLearningFactor>+0.15</GlobalLearningFactor>
-		  <DiplomacyPower>+0.05</DiplomacyPower>
+		  <NegotiationAbility>+0.05</NegotiationAbility>
 		  <TradePriceImprovement>+0.05</TradePriceImprovement>
 		</statOffsets>
 		<skillGains>
@@ -607,12 +577,12 @@
 	  </li>
 	  <li>
         <label>very intelligent</label>
-        <description>NAME is very smart. HECAP learns faster and has a great understanding of the world around HIM.</description>
+        <description>[PAWN_nameDef] is very smart. [PAWN_pronoun] learns faster and has a great understanding of the world around [PAWN_objective].</description>
 		<degree>2</degree>
 		<statOffsets>
 		  <ResearchSpeed>+0.20</ResearchSpeed>
 		  <GlobalLearningFactor>+0.30</GlobalLearningFactor>
-		  <DiplomacyPower>+0.10</DiplomacyPower>
+		  <NegotiationAbility>+0.10</NegotiationAbility>
 		  <TradePriceImprovement>+0.10</TradePriceImprovement>
 		</statOffsets>
 		<skillGains>
@@ -643,12 +613,11 @@
     <degreeDatas>
 	  <li>
         <label>oblivious</label>
-        <description>NAME isn't very aware if HIS surroundings, or anything at all really. HECAP</description>
+        <description>[PAWN_nameDef] isn't very aware of [PAWN_possessive] surroundings, or anything at all really. [PAWN_pronoun]</description>
 		<statOffsets>
 		  <SocialImpact>-0.10</SocialImpact>
-		  <DiplomacyPower>-0.10</DiplomacyPower>
+		  <NegotiationAbility>-0.10</NegotiationAbility>
 		  <TradePriceImprovement>-0.05</TradePriceImprovement>
-		  <RecruitPrisonerChance>-0.05</RecruitPrisonerChance>
 		  <TrainAnimalChance>-0.05</TrainAnimalChance>
 		  <TameAnimalChance>-0.05</TameAnimalChance>
 		</statOffsets>
@@ -687,13 +656,12 @@
     <degreeDatas>
       <li>
         <label>Perceptive</label>
-        <description>NAME has a good awareness of HIS surroundings and has a good understanding of how HIS actions affects others.</description>
+        <description>[PAWN_nameDef] has a good awareness of [PAWN_possessive] surroundings and has a good understanding of how [PAWN_possessive] actions affects others.</description>
 		<degree>1</degree>
 		<statOffsets>
 		  <SocialImpact>+0.10</SocialImpact>
-		  <DiplomacyPower>+0.10</DiplomacyPower>
+		  <NegotiationAbility>+0.10</NegotiationAbility>
 		  <TradePriceImprovement>+0.05</TradePriceImprovement>
-		  <RecruitPrisonerChance>+0.05</RecruitPrisonerChance>
 		  <TrainAnimalChance>+0.05</TrainAnimalChance>
 		  <TameAnimalChance>+0.05</TameAnimalChance>
 		</statOffsets>
@@ -714,13 +682,12 @@
 	  </li>
 	  <li>
         <label>very perceptive</label>
-        <description>NAME is very aware of HIS surroundings and has a great understanding of how HIS actions affects others.</description>
+        <description>[PAWN_nameDef] is very aware of [PAWN_possessive] surroundings and has a great understanding of how [PAWN_possessive] actions affects others.</description>
 		<degree>2</degree>
 		<statOffsets>
 		  <SocialImpact>+0.20</SocialImpact>
-		  <DiplomacyPower>+0.20</DiplomacyPower>
+		  <NegotiationAbility>+0.20</NegotiationAbility>
 		  <TradePriceImprovement>+0.10</TradePriceImprovement>
-		  <RecruitPrisonerChance>+0.05</RecruitPrisonerChance>
 		  <TrainAnimalChance>+0.05</TrainAnimalChance>
 		  <TameAnimalChance>+0.05</TameAnimalChance>
 		</statOffsets>
@@ -758,7 +725,7 @@
     <degreeDatas>
       <li>
         <label>scrounger</label>
-        <description>NAME knows how to scavenge and gather for resources quickly.</description>
+        <description>[PAWN_nameDef] knows how to scavenge and gather for resources quickly.</description>
 		<statOffsets>
 		  <MiningSpeed>+0.20</MiningSpeed>
 		  <AnimalGatherSpeed>+0.20</AnimalGatherSpeed>
@@ -782,10 +749,10 @@
     <degreeDatas>
       <li>
         <label>enduring</label>
-        <description>NAME has good health and an enduring personality. HECAP is better at handling stressful situations than others.</description>
+        <description>[PAWN_nameDef] has good health and an enduring personality. [PAWN_pronoun] is better at handling stressful situations than others.</description>
 		<degree>1</degree>
 		<statOffsets>
-		  <PainShockThreshold>+0.05</PainShockThreshold>
+		  <PainShockThreshold>+0.10</PainShockThreshold>
 		  <MentalBreakThreshold>-0.10</MentalBreakThreshold>
 		  <ImmunityGainSpeed>+0.10</ImmunityGainSpeed>
 		  <ToxicSensitivity>-0.15</ToxicSensitivity>
@@ -794,10 +761,10 @@
 	  </li>
 	  <li>
         <label>very enduring</label>
-        <description>NAME has exceptional health and a very enduring personality. HECAP is capable of handling high stress situations that others cannot.</description>
+        <description>[PAWN_nameDef] has exceptional health and a very enduring personality. [PAWN_pronoun] is capable of handling high stress situations that others cannot.</description>
 		<degree>2</degree>
 		<statOffsets>
-		  <PainShockThreshold>+0.10</PainShockThreshold>
+		  <PainShockThreshold>+0.15</PainShockThreshold>
 		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
 		  <ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
 		  <ToxicSensitivity>-0.30</ToxicSensitivity>

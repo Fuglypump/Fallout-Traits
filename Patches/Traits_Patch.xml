@@ -24,7 +24,6 @@
 		<value>
 			<li>FT_GunNut</li>
 			<li>FT_Rooted</li>
-			<li>FT_Toughness</li>
 			<li>FT_Intimidation</li>
 			<li>FT_Agility</li>
 			<li>FT_Endurance</li>
@@ -189,31 +188,6 @@
 			<li>FT_Perception</li>
 		</value>
 	</Operation>
-		
-	<!-- GreenThumb -->
-		
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>*/TraitDef[defName = "GreenThumb"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/TraitDef[defName = "GreenThumb"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/TraitDef[defName = "GreenThumb"]/conflictingTraits</xpath>
-		<value>
-			<li>FT_Scrapper</li>
-		</value>
-	</Operation>	
 		
 	<!-- Nerves -->
 		
