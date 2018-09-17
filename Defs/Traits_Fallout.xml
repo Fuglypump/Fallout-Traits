@@ -87,7 +87,6 @@
         <label>ghoulish</label>
         <description>[PAWN_nameDef] is still human, mostly. [PAWN_pronoun] is immune to the effects of toxic fallout but their ghoulish appearance makes interacting with others difficult.</description>
 		<statOffsets>
-			<marketValueFactorOffset>-0.25</marketValueFactorOffset>
 			<ToxicSensitivity>-1.0</ToxicSensitivity>
 			<ImmunityGainSpeed>+0.30</ImmunityGainSpeed>
 			<SocialImpact>-0.20</SocialImpact>
@@ -521,7 +520,6 @@
 		<statOffsets>
 		  <ResearchSpeed>-0.10</ResearchSpeed>
 		  <GlobalLearningFactor>-0.25</GlobalLearningFactor>
-		  <FoodPoisonChance>+0.05</FoodPoisonChance>
 		  <NegotiationAbility>-0.10</NegotiationAbility>
 		  <TradePriceImprovement>-0.05</TradePriceImprovement>
 		  <ConstructSuccessChance>-0.05</ConstructSuccessChance>
@@ -730,7 +728,7 @@
 		  <MiningSpeed>+0.20</MiningSpeed>
 		  <AnimalGatherSpeed>+0.20</AnimalGatherSpeed>
 		  <PlantWorkSpeed>+0.20</PlantWorkSpeed>
-		  <EatingSpeed>+0.10</EatingSpeed>
+		  <EatingSpeed>+0.20</EatingSpeed>
 		</statOffsets>
 	  </li>
     </degreeDatas>
@@ -764,8 +762,8 @@
         <description>[PAWN_nameDef] has exceptional health and a very enduring personality. [PAWN_pronoun] is capable of handling high stress situations that others cannot.</description>
 		<degree>2</degree>
 		<statOffsets>
-		  <PainShockThreshold>+0.15</PainShockThreshold>
-		  <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		  <PainShockThreshold>+0.20</PainShockThreshold>
+		  <MentalBreakThreshold>-0.20</MentalBreakThreshold>
 		  <ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
 		  <ToxicSensitivity>-0.30</ToxicSensitivity>
 		  <PsychicSensitivity>-0.30</PsychicSensitivity>
